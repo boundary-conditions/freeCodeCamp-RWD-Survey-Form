@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Monoton|Patua+One&display=swap" rel="stylesheet">
+    <head>
+        <title>What Do Humans Eat: Survey</title>
+    </head>
+    <body>
+        <div>
+            <header>
+                <nav>
+                    <a href="#name">Name</a>
+                    <a href="#email">Email</a>
+                    <a href="#number">Number of Daily Meals</a>
+                    <a href=""">Email the Creator (of this survey, not god)</a>
+                </nav>
+            </header>
+            <main>
+                <div>
+                    <h1 id="title">What Do Humans Eat</h1>
+                    <p id="description">This survey seeks a general assessment of the eating habits of Earth based humans.</p>
+                </div>
+                <form id="survey-form">
+                    <label id="name-label">Name:
+                    <input type="text" id="name" placeholder="Your Name, Earthling..." required></label>
+                    <label id="email-label">E-Mail:
+                    <input type="email" id="email" placeholder="Enter a valid email..." required></label>
+                    <label id="age-label">Age:
+                    <input type="number" id="age" min="18" max="150" required placeholder="Must be 18 or older..."></label>
+                    <label id="number-label">Number of Meals per Day:
+                    <input type="number" id="number" min="1" max="10" required placeholder="1"></label>
+                    <label for="dropdown">Diet:
+                    <select id="dropdown">
+                        <option value="vegan">Vegan</option>
+                        <option value="vegetarian">Vegetarian</option>
+                        <option value="pescatarian">Pescatarian</option>
+                        <option value="omnivore">Omnivore</option>
+                        <option value="carnivore">Carnivore</option>
+                        <option value="brains">Braaaaaiiiinnnnssss</option>
+                    </select></label>
+                    <label for="living">Living
+                    <input type="radio" id="living" name="status" value="living"></label>
+                    
+                    <label for="undead">Undead
+                        <input type="radio" id="undead" name="status" value="undead"></label>
+                    <label for="asparagus">Asparagus
+                        <input type="checkbox" id="asparagus" value="asparagus"></label>
+                    <label for="beef">Beef
+                        <input type="checkbox" id="beef" value="beef"></label>
+                    
+                    <label for="corn">Corn
+                        <input type="checkbox" id="corn" value="corn"></label>
+                    
+                    <label for="brains"><input type="checkbox" id="brains" value="brains">
+                    Delicious Brains</label>
+                    <label id="comments"><input type="text" </label>
+
+                    <input type="button" id="submit" value="Submit Survey">
+                </form>
+            </main>
+        </div>
+    </body>
+</html>

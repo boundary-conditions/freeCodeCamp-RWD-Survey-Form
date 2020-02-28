@@ -8,14 +8,14 @@
     <body>
         <div>
             <header>
-                <nav>
-                    <a href="#name">Name</a>
-                    <a href="#email">Email</a>
-                    <a href="#number">Number of Daily Meals</a>
-                    <a href=""">Email the Creator (of this survey, not god)</a>
+                <nav id="nav">
+                    <a href="#name">- Name -</a>
+                    <a href="#email"> Email -</a>
+                    <a href="#number"> Number of Daily Meals -</a>
+                    <a href="""> Email the Creator (of this survey, not god) -</a>
                 </nav>
             </header>
-            <main>
+            <main id="main">
                 <div>
                     <h1 id="title">What Do Humans Eat</h1>
                     <p id="description">This survey seeks a general assessment of the eating habits of Earth based humans.</p>
@@ -24,16 +24,16 @@
                     
                     <fieldset id="identity">
                     <label id="name-label">Name:
-                    <input type="text" id="name" placeholder="Your Name, Earthling..." required></label>
+                    <input type="text" id="name" placeholder="Your Name, Earthling..." required></label><br>
                     <label id="email-label">E-Mail:
-                    <input type="email" id="email" placeholder="Enter a valid email..." required></label>
+                    <input type="email" id="email" placeholder="Enter a valid email..." required></label><br>
                     <label id="age-label">Age:
-                    <input type="number" id="age" min="18" max="150" required placeholder="Must be 18 or older..."></label>
+                    <input type="number" id="age" min="18" max="150" required placeholder="Yrs"></label>
                     </fieldset>
 
                     <fieldset id="habits">
                     <label id="number-label">Number of Meals per Day:
-                    <input type="number" id="number" min="1" max="10" required placeholder="1"></label>
+                    <input type="number" id="number" min="1" max="10" required placeholder="1"></label><br>
                     <label for="dropdown">Diet:
                     <select id="dropdown">
                         <option value="vegan">Vegan</option>
@@ -42,12 +42,12 @@
                         <option value="omnivore">Omnivore</option>
                         <option value="carnivore">Carnivore</option>
                         <option value="brains">Braaaaaiiiinnnnssss</option>
-                    </select></label>
+                    </select></label><br>
                     <label for="living">Living
                     <input type="radio" id="living" name="status" value="living"></label>
                     
                     <label for="undead">Undead
-                        <input type="radio" id="undead" name="status" value="undead"></label>
+                        <input type="radio" id="undead" name="status" value="undead"></label><br>
                     <label for="asparagus">Asparagus
                         <input type="checkbox" id="asparagus" value="asparagus"></label>
                     <label for="beef">Beef
@@ -59,10 +59,10 @@
                     </fieldset>
 
                     <fieldset id="finish">
-                    <label for="comments">Additional Comments:
+                    <label for="comments">Additional Comments:<br>
                         <textarea id="comments">Please describe your eating habits so we may replicate them upon our infiltration...</textarea>
-                    </label>
-                    <input type="button" id="submit" value="Submit Survey">
+                    </label><br>
+                    <input type="submit" id="submit" value="Submit Survey">
                     </fieldset>
                 </form>
             </main>

@@ -21,12 +21,17 @@
                     <p id="description">This survey seeks a general assessment of the eating habits of Earth based humans.</p>
                 </div>
                 <form id="survey-form">
+                    
+                    <fieldset id="identity">
                     <label id="name-label">Name:
                     <input type="text" id="name" placeholder="Your Name, Earthling..." required></label>
                     <label id="email-label">E-Mail:
                     <input type="email" id="email" placeholder="Enter a valid email..." required></label>
                     <label id="age-label">Age:
                     <input type="number" id="age" min="18" max="150" required placeholder="Must be 18 or older..."></label>
+                    </fieldset>
+
+                    <fieldset id="habits">
                     <label id="number-label">Number of Meals per Day:
                     <input type="number" id="number" min="1" max="10" required placeholder="1"></label>
                     <label for="dropdown">Diet:
@@ -46,16 +51,19 @@
                     <label for="asparagus">Asparagus
                         <input type="checkbox" id="asparagus" value="asparagus"></label>
                     <label for="beef">Beef
-                        <input type="checkbox" id="beef" value="beef"></label>
-                    
+                        <input type="checkbox" id="beef" value="beef"></label>                    
                     <label for="corn">Corn
                         <input type="checkbox" id="corn" value="corn"></label>
-                    
-                    <label for="brains"><input type="checkbox" id="brains" value="brains">
-                    Delicious Brains</label>
-                    <label id="comments"><input type="text" </label>
+                    <label for="brains">Delicious Brains
+                        <input type="checkbox" id="brains" value="brains"></label>
+                    </fieldset>
 
+                    <fieldset id="finish">
+                    <label for="comments">Additional Comments:
+                        <textarea id="comments">Please describe your eating habits so we may replicate them upon our infiltration...</textarea>
+                    </label>
                     <input type="button" id="submit" value="Submit Survey">
+                    </fieldset>
                 </form>
             </main>
         </div>
